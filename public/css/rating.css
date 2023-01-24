@@ -1,0 +1,28 @@
+.stars {
+    display: inline-block;
+    font-family: Times;
+    line-height: 1;
+    font-size: var(--star-size);
+}
+
+._ratingAtlantis {
+    --percent: calc(var(--rating) / 1 * 100%);
+}
+
+._ratingBunaken {
+  --percent: calc(var(--rating) / 2.6 * 100%);
+}
+
+._ratingCalypso {
+    --percent: calc(var(--rating) / 3 * 100%);
+}
+
+._ratingFernsteinsee {
+    --percent: calc(var(--rating) / 3.089 * 100%);
+
+}
+
+._ratingScubaShack {
+    --percent: calc(var(--rating) / 1 * 100%);
+}
+

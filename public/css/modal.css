@@ -1,0 +1,523 @@
+html {
+  box-sizing: border-box;
+}
+
+/* inherit border-box on all elements in the universe and before and after
+   */
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  color: var(--nereusblue);
+}
+
+@media (max-width: 580px) {
+  img {
+    margin-top: 2.5rem;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media (min-width: 581px) {
+  img {
+    margin-top: 2.5rem;
+    max-width: 80%;
+    height: auto;
+  }
+}
+
+input {
+  background-color: var(--nereusorcalite);
+  padding-left: 0.6em;
+  font-family: laca, sans-serif;
+  height: 22px;
+  border-radius: 0.4em;
+  outline: none;
+  border: none;
+}
+
+#mail {
+  text-transform: lowercase;
+}
+
+/* input, */
+
+select {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  border-radius: 6px;
+  background-color: var(--nereusorcalite);
+  height: 34px;
+  width: 180px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  outline: none;
+  border: none;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='date'] {
+  height: 2.375rem;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-align: center;
+  text-align-last: center;
+  -moz-text-align-last: center;
+  -ms-text-align-last: center;
+}
+
+.select-wrapper {
+  display: inline;
+  position: relative;
+}
+
+.select-wrapper:after {
+  content: '';
+  width: 0;
+  height: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.select-wrapper:after {
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  top: 0.3em;
+  right: 0.75em;
+  border-top: 8px solid var(--nereusblue);
+  opacity: 0.8;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+.cloneBox-spacing {
+  margin: 1vh;
+}
+
+/* Modal Logo Mobile Screen Size */
+@media (max-width: 760px) {
+  .logo-modal {
+    width: 50%;
+  }
+
+  hr {
+    margin: 0 auto;
+    margin-top: 3.5em;
+    margin-bottom: 2.5em;
+    width: 50%;
+    border-radius: 4px;
+    border: 0.5px solid var(--nereusorange);
+  }
+}
+
+/* Logo Modal Desktop Screen Size */
+@media (min-width: 768px) {
+  .logo-modal {
+    width: 30%;
+  }
+
+  hr {
+    display: none;
+  }
+}
+
+button {
+  font-family: laca;
+  transition: transform 0.3s ease;
+}
+
+button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.sec {
+  /* border: 1px solid red; */
+  margin: 0 auto;
+  max-width: 1200px;
+  text-align: center;
+  margin-bottom: 5.5rem;
+}
+
+.header {
+  line-height: 1.5;
+}
+
+/* Add Btn Attributes */
+.add-btn {
+  -webkit-tap-highlight-color: transparent;
+  margin: 1rem 0 6px 0;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  border: none;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  background-color: var(--nereusorange);
+  font-size: 21px;
+  outline: none;
+}
+
+/* ################### Grid System ########################*/
+.wrapper-top {
+  display: grid;
+  max-width: 1200px;
+  margin: 2vh auto;
+  margin-bottom: 1vh;
+  grid-gap: 0.3em;
+  font-weight: 600;
+}
+
+.wrapper-top-margin {
+  margin: 0 0 1vh 0;
+}
+
+.wrapper-top-2 {
+  /* display: grid; */
+  max-width: 1200px;
+  margin: 2vh auto;
+  margin-bottom: 1vh;
+  grid-gap: 0.3em;
+  font-weight: 600;
+}
+
+/* Mobile Landscape Screen Sizes */
+@media only screen and (min-width: 760px) {
+  .header {
+    font-size: 24px;
+  }
+
+  .wrapper-top {
+    grid-template-columns: 1fr, 1fr, 1fr;
+    grid-template-rows: auto;
+  }
+}
+
+/* Desktop Screen Sizes */
+@media only screen and (min-width: 768px) {
+  .header {
+    font-size: 34px;
+  }
+
+  /* Hide p-tag of Row 2 on Desktop */
+  .hide-on-desktop {
+    display: none;
+  }
+
+  .col-0 {
+    grid-column: 1/2;
+  }
+
+  .col-1 {
+    grid-column: 2/3;
+  }
+
+  .col-2 {
+    grid-column: 3/4;
+  }
+
+  /* .col-4 {
+          grid-column: 5/6;
+      } */
+
+  /* Second Row */
+  .col-0-r2 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    /* padding-top: 40px; */
+  }
+
+  .col-1-r2 {
+    grid-row: 2/3;
+  }
+
+  .col-2-r2 {
+    grid-row: 2/3;
+  }
+
+  .col-3-r2 {
+    grid-row: 2/3;
+  }
+
+  /* .col-4-r2 {
+          grid-row: 2/3;
+      } */
+}
+
+/* ################### Grid System Middle ########################*/
+.wrapper-middle {
+  display: grid;
+  max-width: 1200px;
+  margin: 2%;
+  grid-gap: 1.5em;
+  font-weight: 600;
+}
+
+.range-picker {
+  border-radius: 6px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  background-color: var(--nereusorcalite);
+  align-self: center;
+  justify-self: center;
+  padding: 6px;
+}
+
+::placeholder {
+  color: var(--nereusblue);
+  font-size: 1.5em;
+  font-size: 16px;
+  font-weight: 600;
+  opacity: 0.9;
+}
+
+:focus::placeholder {
+  color: transparent;
+}
+
+/* Mobile Landscape Screen Sizes */
+@media only screen and (min-width: 760px) {
+  .wrapper-middle {
+    /* grid-template-columns: repeat(1, 1fr); */
+    grid-template-rows: auto;
+  }
+
+  .range-picker {
+    height: 44px;
+    width: 77%;
+  }
+}
+
+/* Desktop Screen Sizes */
+@media only screen and (min-width: 768px) {
+  .range-picker {
+    height: 34px;
+    width: fit-content;
+  }
+
+  .col-1to3-r1-sec-m {
+    grid-column: 1/6;
+    grid-row: 1/2;
+  }
+
+  .col-1-r2-sec-m {
+    grid-column: 1/6;
+    grid-row: 2/3;
+  }
+
+  .col-2-r2-sec-m {
+    grid-column: 1/6;
+    grid-row: 3/4;
+  }
+
+  .col-1to3-r3-sec-m {
+    grid-column: 1/6;
+    grid-row: 4/5;
+  }
+
+  .col-1to3-r4-sec-m {
+    grid-column: 3/4;
+    grid-row: 3/4;
+  }
+}
+
+#displayOptions {
+  display: grid;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Select Fields for Courses and Dives*/
+
+.grid-form {
+  display: grid;
+}
+
+input[type='checkbox'] {
+  visibility: hidden;
+}
+
+.checkbox {
+  -webkit-tap-highlight-color: transparent;
+  width: 100%;
+  margin: 15px auto;
+  position: relative;
+  display: block;
+}
+
+.checkbox input[type='checkbox'] {
+  width: auto;
+  opacity: 0.00000001;
+  position: absolute;
+  left: 0;
+  margin-left: -20px;
+}
+
+.checkbox label {
+  position: relative;
+}
+
+.checkbox label:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 4px;
+  width: 22px;
+  height: 22px;
+  transition: transform 0.28s ease;
+  border-radius: 3px;
+  border: 2px solid var(--nereusblue);
+}
+
+.checkbox label:after {
+  content: '';
+  display: block;
+  width: 10px;
+  height: 5px;
+  border-bottom: 2px solid var(--nereusorange);
+  border-left: 2px solid var(--nereusorange);
+  -webkit-transform: rotate(-45deg) scale(0);
+  transform: rotate(-45deg) scale(0);
+  transition: transform ease 0.25s;
+  will-change: transform;
+  position: absolute;
+  top: 12px;
+  left: 10px;
+}
+
+.checkbox input[type='checkbox']:checked ~ label::before {
+  color: #7bbe72;
+}
+
+.checkbox input[type='checkbox']:checked ~ label::after {
+  -webkit-transform: rotate(-45deg) scale(1);
+  transform: rotate(-45deg) scale(1);
+}
+
+.checkbox label {
+  min-height: 34px;
+  display: block;
+  padding-left: 40px;
+  margin-bottom: 0;
+  font-weight: normal;
+  cursor: pointer;
+  vertical-align: sub;
+}
+
+.checkbox label span {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.checkbox input[type='checkbox']:focus + label::before {
+  outline: 0;
+}
+
+@media (max-width: 764px) {
+  fieldset {
+    width: 290px;
+  }
+}
+
+@media (min-width: 768px) {
+  fieldset {
+    width: 700px;
+  }
+}
+
+fieldset {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: left;
+  padding-top: 12px;
+  color: var(--nereusblue);
+  border-radius: 12px;
+  background-color: var(--nereusorcalite);
+}
+
+/* Textarea */
+textarea {
+  margin-top: 1.5em;
+  width: 65%;
+  height: 250px;
+  padding: 20px 20px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 4px;
+  color: var(--nereusblue);
+  font-family: laca;
+  background-color: var(--nereusorcalite);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  font-size: 16px;
+  resize: none;
+  outline: none;
+  overflow: auto;
+}
+
+/* ################### Grid System Bottom ########################*/
+.wrapper-bottom {
+  display: grid;
+  max-width: 1200px;
+  margin: 2%;
+  grid-gap: 1.5em;
+  font-weight: 600;
+}
+
+.col-2-r2-sec-bottom-margin {
+  margin-top: 2em;
+}
+
+.submit-button {
+  -webkit-tap-highlight-color: transparent;
+  width: 202px;
+  height: 36px;
+  border-radius: 6px;
+  border: none;
+  background-color: var(--nereusorange);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  outline: none;
+  font-size: 18px;
+}
+
+/* Mobile Landscape Screen Sizes */
+@media only screen and (min-width: 760px) {
+  .wrapper-bottom {
+    grid-template-columns: 1fr, 1fr, 1fr;
+    grid-template-rows: auto;
+  }
+}
+
+/* Desktop Screen Sizes */
+@media only screen and (min-width: 768px) {
+  .col-1-r1-sec-bottom {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  .col-2-r2-sec-bottom {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  .col-1to2-r3-sec-bottom {
+    grid-column: 1/3;
+    grid-row: 5/6;
+  }
+}

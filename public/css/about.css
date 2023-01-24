@@ -1,0 +1,268 @@
+/*
+Copyright: Nereus Diving 2018
+Martin Straußberger
+*/
+body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+* hr {
+    color: #bbbbbb;
+}
+
+img {
+    margin-top: 0 !important;
+}
+
+@media (max-width: 600px) {
+    textarea {
+        width: 65% !important;
+    }
+}
+
+@media (min-width: 700px) {
+    textarea {
+        width: 800px !important;
+    }
+}
+
+
+/* Top */
+.top_about {
+    padding-top: 18vh;
+    padding-bottom: 10vh;
+    max-width: 1335px;
+    margin: 0 auto;
+    height: auto;
+}
+
+.flex-grid {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-grid .col_1 {
+    flex: 3;
+}
+
+.flex-grid .col_2 {
+    flex: 1;
+}
+
+@media(max-width: 768px) {
+    .col_1 {
+        text-align: center;
+    }
+}
+
+.col_1 {
+    height: 550px;
+    width: auto;
+    flex-basis: auto;
+    -ms-flex: auto;
+    position: relative;
+    padding: 10px;
+}
+
+.col_2 {
+    text-align: center;
+    align-self: center;
+    padding: 10px;
+}
+
+.col_2 h1 {
+    font-size: 50px;
+}
+
+.col_2 h3 {
+    font-weight: 400;
+    font-size: 30px;
+}
+
+@media (max-width: 480px) {
+    .flex-grid {
+        display: block;
+    }
+
+    .flex-grid .col_1 {
+        width: 100%;
+        height: 200px;
+        /* margin: 0 0 10px 0; */
+    }
+
+    .flex-grid .col_2 {
+        width: 100%;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 900px) {
+    .flex-grid {
+        display: block;
+    }
+
+    .flex-grid .col_1 {
+        width: 100%;
+        height: 200px;
+        margin: 0 0 10px 0;
+    }
+
+    .flex-grid .col_2 {
+        width: 100%;
+        margin-top: 8vh;
+        margin-bottom: -3vh;
+    }
+}
+
+@media(max-width: 480px) {
+    #__topImg {
+        width: 300px;
+        height: 200px;
+        border-radius: 4px;
+    }
+}
+
+@media(min-width: 481px) and (max-width: 769px) {
+    #__topImg {
+        width: 500px;
+        height: 300px;
+        border-radius: 4px;
+    }
+}
+
+@media(min-width: 769px) {
+    #__topImg {
+        width: 100%;
+        height: 581px;
+        border-radius: 8px;
+    }
+}
+
+#__topImg:hover {
+    transform: scale(1.1);
+}
+
+/* Team*/
+.team_header h1 {
+    font-size: 50px;
+}
+
+.section_header h1 {
+    font-size: 70px;
+}
+
+.team {
+    height: auto;
+    width: 100%;
+}
+
+.team_cards {
+    display: grid;
+    max-width: 1200px;
+    margin: auto;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: auto;
+    grid-gap: 2.5rem;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+._card {
+    margin-bottom: -5vh;
+}
+
+@media (max-width: 480px) {
+    ._card {
+        width: 80%;
+        margin-bottom: 2vh;
+        padding-top: 4vh;
+        height: 300px;
+        color: grey;
+        border-radius: 10px;
+        margin-left: 10vw;
+        background-color: var(--nereuswhite);
+    }
+}
+
+@media (min-width: 481px) {
+    ._card {
+        width: 92%;
+        height: 450px;
+        padding-top: 4vh;
+        color: grey;
+        border-radius: 10px;
+        transition: all .5s ease-out;
+    }
+}
+
+.margin-title {
+    margin-top: 20px;
+}
+
+._card h3 {
+    color: var(--nereusblue);
+    font-size: 30px;
+}
+
+._card p {
+    font-size: 18px;
+}
+
+#__profileImg {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+#__profileImg:hover {
+    transform: scale(1.2);
+    transition: .2s;
+}
+
+@media(max-width: 480px) {
+    #__profileImg {
+        border-radius: 50%;
+        width: 160px;
+        height: 160px;
+    }
+}
+
+.item-1,
+.item-2 {
+    text-align: center;
+}
+
+/* Why Nereus */
+.why_nereus {
+    padding: 10px;
+    padding-bottom: 5vh;
+    margin-bottom: 6vh;
+    background-color: var(--nereuspannacotta);
+}
+
+.why_content {
+    display: grid;
+    width: 96%;
+    max-width: 1200px;
+    margin: auto;
+    padding-bottom: 3vh;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: auto;
+    grid-gap: 2.5rem;
+    justify-content: center;
+    text-align: center;
+}
+
+._text h1 {
+    font-size: 30px;
+}
+
+._text p {
+    text-align: justify;
+    font-size: 20px;
+}

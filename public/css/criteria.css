@@ -1,0 +1,151 @@
+/*
+Copyright: Nereus Diving 2018
+Martin Straußberger
+*/
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+* hr {
+  color: #bbbbbb;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h3 {
+  padding: 20px;
+  font-size: 30px;
+}
+
+.card {
+  grid-gap: none;
+  height: auto;
+  cursor: default;
+}
+
+.card p {
+  font-size: 16px;
+  padding: 0 20px 20px 20px;
+}
+
+.card:hover {
+  transform: none;
+}
+
+._criteria-header {
+  display: grid;
+  height: auto;
+  max-width: 1200px;
+  text-align: center;
+  padding-left: 1vw;
+  margin: auto;
+  margin-bottom: 5vh;
+  padding: 20vh 20px 0 20px;
+}
+
+._p-criteria-intro {
+  margin: 20px 0 0 0;
+  font-size: 22px;
+  text-align: left;
+  padding: 1vw 1vw 0vw 4vw;
+}
+
+._p2-criteria-intro {
+  margin-top: 20px 0 0 0;
+  font-size: 16px;
+  font-style: italic;
+  padding: 1vw 1vw 0 1vw;
+}
+
+/*  SECTIONS  */
+.section {
+  height: auto;
+  margin: 0 auto;
+  max-width: 1200px;
+  clear: both;
+}
+
+._criteria-section {
+  margin-bottom: 5vh;
+}
+
+#_criteriaImg {
+  /* review with team */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+  border-radius: 12px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+  display: block;
+  float: left;
+  margin: 1% 0 1% 1.6%;
+}
+
+.col p {
+  padding: 0 20px 0 20px;
+  font-size: 22px;
+}
+
+.col:first-child {
+  margin-left: 0;
+}
+
+.col:nth-child(2) {
+  margin-left: 0vw;
+}
+
+/*  GROUPING  */
+.group:before,
+.group:after {
+  content: '';
+  display: table;
+}
+
+.group:after {
+  clear: both;
+}
+
+.group {
+  zoom: 1;
+  /* For IE 6/7 */
+}
+
+/*  GRID OF TWO  */
+.span_2_of_2 {
+  width: 100%;
+}
+
+.span_1_of_2 {
+  width: 47.2%;
+  text-align: center;
+}
+
+.group {
+  padding: 2.5vh 0 2.5vh 0;
+}
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+  .col {
+    margin: 1% 0 1% 0%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .span_2_of_2,
+  .span_1_of_2 {
+    width: 100%;
+  }
+}
