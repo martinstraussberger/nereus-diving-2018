@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Nereus Font -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link rel="stylesheet" href="https://use.typekit.net/qqk2iur.css" />
+    <!-- CSS import -->
+    <link rel="stylesheet" href="./public/css/contactform.css" />
+    <link rel="stylesheet" href="./public/css/style.css" />
+    <link rel="stylesheet" href="./pages/Partner.html" />
+    <!-- Dependencies -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Orbitron&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Nereus Diving</title>
+  </head>
+
+  <body>
+    <nav>
+      <div class="navbar">
+        <a href="#" class="logo" class="active"
+          ><img src="/public//images/logo/LogoBlauNoSubline.svg" alt=""
+        /></a>
+        <ul class="nav">
+          <li id="nav-links"><a href="/about.html">About</a></li>
+          <li id="nav-links"><a class="header-link" href="/criteria.html">Partner</a></li>
+        </ul>
+        <div class="book-btn">
+          <a href="/pages/Partner.html"
+            ><button class="nav-btn" type="button" name="button">Book</button></a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- Top -->
+    <section class="top-section">
+      <img id="bg" src="/public/images/turtle-background1.png" alt="turtle" />
+      <div class="top-title">
+        <h1>Book your exclusive diving experience.</h1>
+        <div class="certificates">
+          <img id="cert-icons" src="/public/images/icons/certifies.svg" alt="" />
+        </div>
+        <div action="" id="form-search" class="show">
+          <div class="instant-search">
+            <div class="instant-search_input-container">
+              <input
+                type="text"
+                class="instant-search_input autocomplete"
+                name="q"
+                id="search"
+                value=""
+                placeholder="Where to go?"
+                maxlength="36"
+              />
+              <button id="no-btn-style">
+                <i id="submit-search" class="material-icons instant-search-icon"
+                  >search</i
+                >
+              </button>
+            </div>
+          </div>
+        </div>
+        <div id="search-results"></div>
+      </div>
+    </section>
+
+    <!-- Card Section -->
+    <div class="card-title">
+      <h1>Our top locations.</h1>
+      <h4>Dive into another world</h4>
+    </div>
+
+    <!-- Card Section -->
+    <a name="anchor"></a>
+    <section class="cards-grid">
+      <div id="redirect-fernsteinsee" onclick="redirectFernSteinSee()" class="card">
+        <img id="card-img" src="/public/images/Fernsteinsee02.jpg" alt="" />
+        <p>Austria - Hotel Fernsteinsee</p>
+      </div>
+      <div id="redirect-bunaken" class="card" onclick="redirectBunaken()">
+        <img id="card-img" src="/public/images/Bunaken02.jpg" alt="" />
+        <p>Indonesia - Resort Bunaken</p>
+      </div>
+      <div id="redirect-calypso" class="card" onclick="redirectCalypso()">
+        <img id="card-img" src="/public/images/Calypso02.jpg" alt="" />
+        <p>Malta - Hotel Calypso</p>
+      </div>
+      <div id="redirect-atlantis" class="card" onclick="redirectAtlantis()">
+        <img id="card-img" src="/public/images/Atlantis02.jpg" alt="" />
+        <p>Malta - Atlantis Diving Center</p>
+      </div>
+      <div class="card" onclick="redirect()">
+        <img id="card-img" src="/public/images/Scubacao02.jpg" alt="" />
+        <p>Curacao - Scubacao</p>
+      </div>
+      <div id="redirect-scubashack" class="card" onclick="redirectScubaShack()">
+        <img id="card-img" src="/public/images/scubaShack2.jpg" alt="" />
+        <p>Thailand - Dive Center Scuba Shack</p>
+      </div>
+      <div class="card" onclick="redirect()">
+        <img id="card-img" src="/public/images/Concept Scuba 02.jpg" alt="" />
+        <p>Malta - Diving Center Concept Scuba</p>
+      </div>
+      <div class="card" onclick="redirect()">
+        <img id="card-img" src="/public/images/Diving Weissensee 02.jpg" alt="" />
+        <p>Austria - Diving Weissensee</p>
+      </div>
+    </section>
+
+    <div class="header">
+      <div class="inner-header flex">
+        <svg
+          version="1.1"
+          class="logo"
+          baseProfile="tiny"
+          id="Layer_1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          x="0px"
+          y="0px"
+          viewBox="0 0 500 500"
+          xml:space="preserve"
+        >
+          <path
+            fill="#FFFFFF"
+            stroke="#000000"
+            stroke-width="10"
+            stroke-miterlimit="10"
+            d="M57,283"
+          ></path>
+        </svg>
+      </div>
+
+      <svg
+        class="waves"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 24 150 28"
+        preserveAspectRatio="none"
+        shape-rendering="auto"
+      >
+        <defs>
+          <path
+            id="gentle-wave"
+            d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+          />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+          <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+          <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+          <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+        </g>
+      </svg>
+    </div>
+    <!--Waves end-->
+
+    <section class="how-it-works">
+      <div class="container-title">
+        <h1>How it works.</h1>
+      </div>
+      <div class="container">
+        <div class="item-1">
+          <img id="org-circles" src="/public/images/icons/component1.svg" alt="" />
+          <div class="p-item">
+            <h2>Browse through.</h2>
+            <p>
+              Explore our partners, each carefully handpicked to offer you an unique
+              experience.
+            </p>
+            <div>
+              <button class="browse-btn" type="button" name="button">Browse now.</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="item-2">
+          <img id="org-circles" src="/public/images/icons/component2.svg" alt="" />
+          <div class="p-item">
+            <h2>Pick your favorite.</h2>
+            <p>Select the dive center or resort you like the most.</p>
+          </div>
+        </div>
+
+        <div class="item-3">
+          <img id="org-circles" src="/public/images/icons/component3.svg" alt="" />
+          <div class="p-item">
+            <h2>Send a request.</h2>
+            <p>
+              Send a request with your travel details. Our form will help you to think of
+              everything.
+            </p>
+          </div>
+        </div>
+
+        <div class="item-4">
+          <img id="org-circles4" src="/public/images/icons/component4.svg" alt="" />
+          <div class="p-item">
+            <h2>Lean back & relax.</h2>
+            <p>
+              Lean back and let us take care of everything that needs to be done. <br />
+              Once we have the confirmation of the partner we will be back in touch.
+            </p>
+          </div>
+        </div>
+
+        <div class="item-5">
+          <img id="org-circles5" src="/public/images/icons/component5.svg" alt="" />
+        </div>
+
+        <div class="_dive">
+          <img
+            id="img-dive"
+            src="/public/images/fontSvg/dive_font.svg"
+            onerror="this.onerror=null; this.src='dive.svg'"
+            alt=""
+          />
+        </div>
+
+        <div class="_wave">
+          <img id="img-wave" src="/public/images/icons/waves-line.svg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section class="player" id="player__content">
+      <video
+        controls
+        poster="/public/images/videoTurtle.png"
+        class="player__video viewer"
+        src="/video/campaign_video.mp4"
+        playsinline
+      ></video>
+    </section>
+
+    <section class="why_us-container">
+      <div class="grid-item-1">
+        <img id="img-dolphin-w" src="/public/images/dolphin_waved.png" alt="" />
+      </div>
+      <div class="grid-item-2">
+        <h1>Why to book with us.</h1>
+        <p class="_p-why-nereus">
+          We only work with the best and most sustainable dive schools and resorts
+          worldwide. Our ultimate goal is to create lifetime experiences for you. If you
+          are happy we are happy. As simple as that. For that reason each of our partners
+          undergoes a strict selection process.
+        </p>
+        <p class="_p-why-nereus">
+          The selection criteria include ratings, equipment, safety, group size, and
+          environmental impact. If you want to learn more about our selection process
+          visit our partner page by clicking the button below.
+        </p>
+        <a href="/criteria.html"
+          ><button class="why-btn" type="button" name="button">Learn more.</button></a
+        >
+      </div>
+    </section>
+
+    <section>
+      <div class="_dive-with-us">
+        <img id="_turtle-footer" src="/public/images/logo/nereus_logo_sub2.svg" alt="" />
+      </div>
+    </section>
+
+    <section>
+      <div id="anchor-to-form" class="_dive-with-us-btn">
+        <button class="dive-btn" type="button" name="button">Dive with us.</button>
+      </div>
+    </section>
+    <div style="margin-top: 5vh"></div>
+    <form action="contactabout.php" method="post">
+      <div class="item-1">
+        <input
+          class="info_input"
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Name"
+          required
+        />
+      </div>
+      <div class="item-1">
+        <input
+          class="info_input"
+          type="text"
+          name="subject"
+          id="subject"
+          placeholder="Subject"
+          required
+        />
+      </div>
+      <div class="item-1">
+        <input
+          class="info_input"
+          type="text"
+          name="mail"
+          id="mail"
+          placeholder="Email"
+          required
+        />
+      </div>
+      <div class="item-2">
+        <textarea
+          name="message"
+          placeholder="Anything to add?"
+          maxlength="500"
+        ></textarea>
+      </div>
+      <div class="_contact-btn">
+        <!-- > needed for php but only works on web-hosting -->
+        <button class="contact-btn" type="submit" name="submit">Send Message</button>
+      </div>
+    </form>
+
+    <footer class="foo-container">
+      <div class="foo-item-1">
+        <h2>Services</h2>
+        <ul class="ul-footer">
+          <li><a href="/about.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="foo-item-2">
+        <h2>About</h2>
+        <ul class="ul-footer">
+          <li><a href="/about.html">Team</a></li>
+        </ul>
+      </div>
+      <div class="foo-item-3">
+        <h2>Nereus Diving UG</h2>
+        <p>Factory Berlin<br />Lohmühlenstraße 65<br />12435 Berlin</p>
+      </div>
+      <div class="foo-item-4">
+        <p id="copyright-desktop" class="copyright">Nereus Diving © 2018</p>
+      </div>
+    </footer>
+
+    <script src="/public/js/redirect.js"></script>
+    <script type="module" src="/public/js/search.js"></script>
+  </body>
+</html>

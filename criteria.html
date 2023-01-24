@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Nereus Font -->
+    <link rel="stylesheet" href="https://use.typekit.net/qqk2iur.css">
+    <!-- CSS import -->
+    <link rel="stylesheet" href="/public/css/theme.css">
+    <link rel="stylesheet" href="/public/css/style.css">
+    <link rel="stylesheet" href="/public/css/contactform.css">
+    <link rel="stylesheet" href="/public/css/criteria.css">
+    <!-- Dependencies -->
+    <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Nereus Criteria System </title>
+</head>
+
+<body>
+    <nav>
+        <div class="navbar">
+            <a href="/index.html" class="logo" class="active"><img src="/public/images/logo/LogoBlauNoSubline.svg"
+                    alt=""></a>
+            <ul class="nav">
+                <li id="nav-links"><a class="header-link" href="about.php">About</a></li>
+            </ul>
+            <div class="book-btn">
+                <a href="#"><button class="nav-btn" type="button" name="button">Book</button></a>
+            </div>
+        </div>
+
+        <section>
+            <div class="_criteria-header">
+                <h1>NEREUS Criteria System</h1>
+                <p class="_p-criteria-intro">We have assessed each dive resort and dive center based on multiple
+                    criteria to ensure <b>NEREUS</b> offers you the
+                    best and most unique diving experience.</p>
+                <br>
+                <p class="_p2-criteria-intro">Being scuba-divers ourselves, we understand the importance of
+                    transparency and trustworthiness when it comes to booking dives. All listings on <b>NEREUS</b> had
+                    to pass the
+                    following criteria: </p>
+            </div>
+        </section>
+        <!-- Card Section -->
+        <section class="cards-grid">
+            <div class="card">
+                <img id="card-img" src="/public/images/partnerCriteria/review_providers.png" alt="">
+                <h3>1. Trusted reviews from multiple providers</h3>
+                <p>We are screening the assessments from dedicated review partners such as Tripadvisor, Holidaycheck,
+                    Google Review.</p>
+            </div>
+
+            <div class="card">
+                <img id="card-img" src="/public/images/partnerCriteria/diver_looking_up.jpg" alt="">
+                <h3>2. Highest quality</h3>
+                <p>All partners have to provide excellent quality in terms of accommodation, dive sites, equipment, and
+                    instructors.</p>
+
+            </div>
+
+            <div class="card">
+                <img id="card-img" src="/public/images/partnerCriteria/diver_awards.jpg" alt="">
+                <h3>3. Awards for extraordinary achievements.</h3>
+                <p>We are looking into achievements, and awards our partners have accomplished throughout the recent
+                    years.</p>
+            </div>
+
+
+            <div class="card">
+                <img id="card-img" src="/public/images/freeOceans_sm.jpg" alt="">
+                <h3>4. Sustainability efforts.</h3>
+                <p>NEREUS only cooperates with dive resorts and dive centers that value sustaining the ocean ecosystem
+                    and moreover contribute with sustainable initiatives.</p>
+            </div>
+
+            <div class="card">
+                <img id="card-img" src="/public/images/partnerCriteria/exclusive_feelings.jpg" alt="">
+                <h3>5. Offer Unique and exclusive experience.</h3>
+                <p>Obviously this is hard to measure, but it comes down to selecting only partners that can offer that
+                    little bit of extra.</p>
+            </div>
+
+            <div class="card">
+                <img id="card-img" src="/public/images/scubis.jpg" alt="">
+                <h3>6. Reasonable Group Sizes</h3>
+                <p>Our partners guarantee that they do not overbook their diving groups.</p>
+            </div>
+        </section>
+
+        <div style="margin-top: 5vh;">
+        <h3 style="text-align: center;">Wish to become a Partner?</h3>
+        </div>
+        <form action="contactabout.php" method="post">
+            <div class="item-1">
+                <input class="info_input" type="text" name="name" id="name" placeholder="Company Name" required>
+            </div>
+            <div class="item-1">
+                <input class="info_input" type="text" name="subject" id="subject" placeholder="Subject" required>
+            </div>
+            <div class="item-1">
+                <input class="info_input" type="text" name="mail" id="mail" placeholder="Email" required>
+            </div>
+            <div class="item-2">
+                <textarea name="message" placeholder="Anything to add?" maxlength="500"></textarea>
+            </div>
+            <div class="_contact-btn">
+                <!-- > needed for php but only works on web-hosting -->
+                <button class="contact-btn" type="submit" name="submit">Send Message</button>
+            </div>
+        </form>
+
+        <footer class="foo-container">
+            <div class="foo-item-1">
+                <h2>Services</h2>
+                <ul class="ul-footer">
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="foo-item-2">
+                <h2>About</h2>
+                <ul class="ul-footer">
+                    <li><a href="/about.php">Team</a></li>
+                    <li><a href="/index.html">Nereus Diving</a></li>
+                </ul>
+            </div>
+            <div class="foo-item-3">
+                <h2>Nereus Diving UG</h2>
+                <p>Factory Berlin<br />Lohmühlenstraße 65<br />12435 Berlin</p>
+            </div>
+            <div class="foo-item-4">
+                <p id="copyright-desktop" class="copyright">Nereus Diving © 2020</p>
+            </div>
+        </footer>
+
+
+</body>
+
+</html>
