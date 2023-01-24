@@ -27,7 +27,7 @@
         <div class="navbar">
             <a href="/index.html" class="logo" class="active"><img src="public/images/logo/LogoBlauNoSubline.svg" alt=""></a>
             <ul class="nav">
-                <li id="nav-links"><a href="criteria.php">Partner</a></li>
+                <li id="nav-links"><a href="criteria.html">Partner</a></li>
             </ul>
             <div class="book-btn">
                 <a href=""><button class="nav-btn" type="button" name="button">Book</button></a>
@@ -76,7 +76,7 @@
         </div>  
     </section>
 
-        <form action="contactabout.php" method="post">
+        <form action="contactabout.html" method="post">
          <div class="item-1">
             <input type="text" name="name" id="name" placeholder="Name" required>
         </div>
