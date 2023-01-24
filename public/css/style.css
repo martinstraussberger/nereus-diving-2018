@@ -648,6 +648,11 @@ div#search-style li:hover {
   }
 }
 
+.grid {
+  display: grid;
+  justify-content: center;
+}
+
 .player {
   margin: 0 auto;
   height: auto;
