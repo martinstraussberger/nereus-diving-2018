@@ -25,7 +25,7 @@
 
     <nav>
         <div class="navbar">
-            <a href="/index.html" class="logo" class="active"><img src="public/images/logo/LogoBlauNoSubline.svg" alt=""></a>
+            <a href="../index.html" class="logo" class="active"><img src="public/images/logo/LogoBlauNoSubline.svg" alt=""></a>
             <ul class="nav">
                 <li id="nav-links"><a href="criteria.html">Partner</a></li>
             </ul>
@@ -104,7 +104,7 @@
         <div class="foo-item-2">
             <h2>About</h2>
             <ul class="ul-footer">
-                <li><a href="/index.html">Nereus Diving</a></li>
+                <li><a href="../index.html">Nereus Diving</a></li>
             </ul>
         </div>
         <div class="foo-item-3">
