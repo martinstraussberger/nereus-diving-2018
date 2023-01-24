@@ -679,7 +679,7 @@ div#search-style li:hover {
 }
 
 .player__video {
-  background: transparent url('/public/images/videoTurtle.png') no-repeat 0 0;
+  background: transparent url('./public/images/videoTurtle.png') no-repeat 0 0;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

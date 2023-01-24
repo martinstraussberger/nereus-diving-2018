@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://use.typekit.net/qqk2iur.css">
     <!-- CSS import -->
     <link rel="stylesheet" href="public/css/about.css">
-    <link rel="stylesheet" href="./public/css/contactform.css">
+    <link rel="stylesheet" href="../public/css/contactform.css">
     <link rel="stylesheet" href="public/css/theme.css">
     <link rel="stylesheet" href="public/css/style.css">
     <link rel="stylesheet" href="public/css/modal.css">
