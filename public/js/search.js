@@ -20,7 +20,7 @@ import { searchIndex } from './autocomplete-list-objects.js';
       '<div class="search-filter"' +
       '">' +
       '<a href="' + './pages/partners/' +
-      partner.url +
+      partner.url.toUpperCase() +
       '">' +
       '<h4 class="partner-h4">' +
       partner.name +
