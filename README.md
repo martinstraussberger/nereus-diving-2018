@@ -9,3 +9,8 @@ Even though we were unable to fully develop the platform, I am excited to share 
 
 
 ## Mobile View
+![mobile](./showcase/Mobile.png)
+
+
+## Desktop View
+![desktop](./showcase/Desktop.png)
