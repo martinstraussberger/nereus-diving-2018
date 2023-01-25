@@ -25,7 +25,7 @@
 
     <nav>
         <div class="navbar">
-            <a href="../index.html" class="logo" class="active"><img src="public/images/logo/LogoBlauNoSubline.svg" alt=""></a>
+            <a href="../index.html" class="logo" class="active"><img src="public/images/logo/LogoBlauNoSubline.svg" alt="logoBlau"></a>
             <ul class="nav">
                 <li id="nav-links"><a href="criteria.html">Partner</a></li>
             </ul>
@@ -50,7 +50,7 @@
     <section class="team">
         <div class="team_cards">
             <div class="_card">
-                <img id="__profileImg" src="public/images/team/martin.png" alt="">
+                <img id="__profileImg" src="public/images/team/martin.png" alt="martin">
                 <div>
                     <div class="margin-title">
                         <h3>Martin S.</h3>
@@ -59,7 +59,7 @@
                 </div>
             </div>
             <div class="_card">
-                <img id="__profileImg" src="public/images/team/dennis.png" alt="">
+                <img id="__profileImg" src="public/images/team/dennis.png" alt="dennis">
                 <div class="margin-title">
                     <h3>Dennis S.</h3>
                     <p>Product Lead</p>
@@ -67,7 +67,7 @@
             </div>
 
             <div class="_card">
-                <img id="__profileImg" src="public/images/team/felix.png" alt="">
+                <img id="__profileImg" src="public/images/team/felix.png" alt="felix">
                 <div class="margin-title">
                     <h3>Felix D.</h3>
                     <p>BD Lead</p>
