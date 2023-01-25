@@ -13,6 +13,9 @@ import { searchIndex } from './autocomplete-list-objects.js';
    * @param {String} //markup
    */
   const createHTML = (partner, id) => {
+  const URL = partner.url;
+  const capitalizeFirstLetter = URL.charAt(0).toUpperCase();
+
     const html =
       '<div class="search-container" id="search-results-' +
       id +
@@ -20,7 +23,7 @@ import { searchIndex } from './autocomplete-list-objects.js';
       '<div class="search-filter"' +
       '">' +
       '<a href="' + './pages/partners/' +
-      partner.url.toUpperCase() +
+      (capitalizeFirstLetter +  URL.slice(1)) +
       '">' +
       '<h4 class="partner-h4">' +
       partner.name +
