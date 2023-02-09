@@ -944,7 +944,7 @@ input[type='range']:focus::-webkit-slider-runnable-track {
   margin: 0 0 2vh 0;
 }
 
-@media (min-width: 300px) and (max-width: 480px) {
+@media (min-width: 300px) and (max-width: 580px) {
   .container-title h1 {
     font-size: 70px;
     padding: 15px;
@@ -972,10 +972,10 @@ input[type='range']:focus::-webkit-slider-runnable-track {
   text-align: center;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 580px) {
   ._wave {
     /* border: 1px solid violet; */
-    margin-top: -3vh;
+    margin-top: -2vh;
     margin-bottom: 3vh;
     text-align: center;
   }
