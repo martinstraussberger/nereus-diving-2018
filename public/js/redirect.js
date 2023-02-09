@@ -2,7 +2,7 @@
 
 // redirect to ScubaShack
 document.getElementById('redirect-scubashack').onclick = function redirectScubaShack() {
-	window.location.href = 'pages/partners/ScubaShack.html';
+	window.location.href = 'pages/partners/Scubashack.html';
 };
 
 // redirect to Fernsteinsee
@@ -17,10 +17,10 @@ document.getElementById('redirect-bunaken').onclick = function redirectBunaken()
 
 // redirect to Calypso
 document.getElementById('redirect-calypso').onclick = function redirectCalypso() {
-	window.location.href = 'pages/partners/CalypsoMalta.html';
+	window.location.href = 'pages/partners/Calypsomalta.html';
 };
 
 // redirect to Atlantis
 document.getElementById('redirect-atlantis').onclick = function redirectAtlantis() {
-	window.location.href = 'pages/partners/AtlantisMalta.html';
+	window.location.href = 'pages/partners/Atlantismalta.html';
 };
